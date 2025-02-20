@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBook } from "react-icons/fa";
 import Axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 
 const CourseAddForm = () => {
@@ -8,20 +9,20 @@ const CourseAddForm = () => {
   const [CourseDescription, setCourseDescription] = useState("");
   const [Price, setCoursePrice] = useState("");
   const [imageUrl, setImageUrl] = useState(""); 
- 
+  const navigate=useNavigate();
 
   const handleAddCourse = async (event) => {
     event.preventDefault();
 
 
     try {
-      const response = await Axios.post("https://learning-managment-system-using-mern.onrender.com/courseRoute/create-course", {
+      const response = await Axios.post("https://learnsphere-backend-1-494r.onrender.com/courseRoute/create-course", {
         CourseName, CourseDescription, Price,imageUrl
       });
 
       if (response.status === 200) {
         alert("Course added successfully!");
-
+        navigate("/adminDashboard");
 
       } else {
         Promise.reject();

@@ -24,7 +24,7 @@ const Services = () => {
       id: 2,
       title: 'Graphic Design',
       description: 'Explore creative design concepts using industry-standard software.',
-      imageUrl: 'https://media.freshbooks.com/wp-content/uploads/2022/03/how-to-start-a-graphic-design-business.jpg',
+      imageUrl: 'https://images.shiksha.com/mediadata/images/articles/1727952706phpexYyzb.jpeg',
     },
     {
       id: 3,
@@ -95,7 +95,7 @@ const Services = () => {
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             <img src="/images/logo1.jpg" alt="Logo" width="50" height="50" className="me-5" />
-            LEARN HUB
+            Study Sphere
           </Link>
           <button
             className="navbar-toggler"
@@ -160,75 +160,75 @@ const Services = () => {
         </div>
       </div>
       <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col" id="company">
-              <img src="images/logo.png" alt="" class="logo" />
-              <p>
-                "Our mission at Learn Hub is to provide accessible, high-quality, and diverse educational content to learners of all backgrounds."
-
-              </p>
-              <div class="social">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+              <div class="container">
+                <div class="row">
+                  <div class="col" id="company">
+                    <img src="images/logo.jpg" alt="" class="logo" />
+                    <p>
+                      "My mission  is to provide accessible, high-quality, and diverse educational content to learners of all backgrounds."
+      
+                    </p>
+                    <div class="social">
+                      <a href="#"><i class="fab fa-facebook"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                  </div>
+      
+      
+                  <div class="col" id="services">
+                    <h3>Services</h3>
+                    <div class="links">
+                      <a href="#">E-learning</a>
+                      <a href="#">Communication and support</a>
+                      <a href="#">Assesments</a>
+                      <a href="#">Course content</a>
+                    </div>
+                  </div>
+      
+                  <div class="col" id="useful-links">
+                    <h3>Links</h3>
+                    <div class="links">
+                      <a href="#">About</a>
+                      <a href="#">Services</a>
+                      <a href="#">Our Policy</a>
+                      <a href="#">Help</a>
+                    </div>
+                  </div>
+      
+                  <div class="col" id="contact">
+                    <h3>Contact</h3>
+                    <div class="contact-details">
+                      <i class="fa fa-location"></i>
+                      <p>Nandyal <br /> Andhra Pradesh, INDIA</p>
+                    </div>
+                    <div class="contact-details">
+                      <i class="fa fa-phone"></i>  
+                      <p>PhoneNo:8919101822</p>
+                    </div>
+                  </div>
+                </div><br></br>
+      
+                <p className="card-text text-black">
+                  Follow us on :
+      
+                  <div className='justify-content-evenly'>
+                    <a href="https://facebook.com">
+                      <FontAwesomeIcon icon={faFacebook} style={{ color: 'black' }} />
+                    </a>&nbsp; &nbsp;
+                    <a href="https://instagram.com">
+                      <FontAwesomeIcon icon={faInstagram} style={{ color: 'black' }} />
+                    </a>&nbsp;  &nbsp;
+                    <a href="mailto:youremail@example.com">
+                      <FontAwesomeIcon icon={faEnvelope} style={{ color: 'black' }} />
+                    </a>
+                  </div>
+                </p>
+      
               </div>
-            </div>
-
-
-            <div class="col" id="services">
-              <h3>Services</h3>
-              <div class="links">
-                <a href="#">E-learning</a>
-                <a href="#">Communication and support</a>
-                <a href="#">Assesments</a>
-                <a href="#">Course content</a>
-              </div>
-            </div>
-
-            <div class="col" id="useful-links">
-              <h3>Links</h3>
-              <div class="links">
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Our Policy</a>
-                <a href="#">Help</a>
-              </div>
-            </div>
-
-            <div class="col" id="contact">
-              <h3>Contact</h3>
-              <div class="contact-details">
-                <i class="fa fa-location"></i>
-                <p>FF-42,Hyderabad, <br /> Telangana, INDIA</p>
-              </div>
-              <div class="contact-details">
-                <i class="fa fa-phone"></i>
-                <p>+1-8755856858</p>
-              </div>
-            </div>
-          </div><br></br>
-
-          <p className="card-text text-black">
-            Follow us on :
-
-            <div className='justify-content-evenly'>
-              <a href="https://facebook.com">
-                <FontAwesomeIcon icon={faFacebook} style={{ color: 'black' }} />
-              </a>&nbsp; &nbsp;
-              <a href="https://instagram.com">
-                <FontAwesomeIcon icon={faInstagram} style={{ color: 'black' }} />
-              </a>&nbsp;  &nbsp;
-              <a href="mailto:youremail@example.com">
-                <FontAwesomeIcon icon={faEnvelope} style={{ color: 'black' }} />
-              </a>
-            </div>
-          </p>
-
-        </div>
-      </footer>
+            </footer>
 
     </>
   );

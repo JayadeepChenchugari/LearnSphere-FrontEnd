@@ -12,7 +12,7 @@ function CourseList() {
   }, []);
 
   const fetchData = () => {
-    axios.get("https://learning-managment-system-using-mern.onrender.com/courseRoute")
+    axios.get("https://learnsphere-backend-1-494r.onrender.com/courseRoute")
       .then((res) => {
         if (res.status === 200) {
           setArr(res.data);
@@ -24,7 +24,7 @@ function CourseList() {
   };
 
   const handleDeleteCourse = (courseId) => {
-    axios.delete(`https://learning-managment-system-using-mern.onrender.com/courseRoute/delete-course/${courseId}`)
+    axios.delete(`https://learnsphere-backend-1-494r.onrender.com/courseRoute/delete-course/${courseId}`)
       .then((res) => {
         if (res.status === 200) {
           alert("Course deleted successfully!");

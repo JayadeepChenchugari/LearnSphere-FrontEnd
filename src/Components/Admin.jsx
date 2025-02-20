@@ -24,7 +24,7 @@ const Admin = () => {
 
     try {
       const response = await Axios.post(
-        "https://learning-managment-system-using-mern.onrender.com/adminRoute/login",
+        "https://learnsphere-backend-1-494r.onrender.com/adminRoute/login",
         { email, password }
       );
 

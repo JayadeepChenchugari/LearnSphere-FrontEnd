@@ -10,7 +10,7 @@ const PaidCourse = () => {
 
   useEffect(() => {
     axios
-      .get("https://learning-managment-system-using-mern.onrender.com/paidRoute")
+      .get("https://learnsphere-backend-1-494r.onrender.com/paidRoute")
       .then((res) => {
         if (res.status === 200) {
           setCourses(res.data);

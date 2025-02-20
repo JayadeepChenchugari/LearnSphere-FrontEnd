@@ -12,7 +12,7 @@ const EditCourseForm = ({ courseId, onClose, onUpdate }) => {
 
   useEffect(() => {
     
-    axios.get(`https://learning-managment-system-using-mern.onrender.com/courseRoute/update-course/${courseId}`)
+    axios.get(`https://learnsphere-backend-1-494r.onrender.com/courseRoute/update-course/${courseId}`)
       .then((res) => {
         if (res.status === 200) {
           
@@ -34,7 +34,7 @@ const EditCourseForm = ({ courseId, onClose, onUpdate }) => {
 
   const handleSubmit = () => {
    
-    axios.put(`https://learning-managment-system-using-mern.onrender.com/courseRoute/update-course/${courseId}`, formData)
+    axios.put(`https://learnsphere-backend-1-494r.onrender.com/courseRoute/update-course/${courseId}`, formData)
       .then((res) => {
         if (res.status === 200) {
             alert("course updated succesfully")

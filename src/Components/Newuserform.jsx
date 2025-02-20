@@ -6,6 +6,7 @@ import {
   AiOutlineLock,
   AiOutlinePhone,
 } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 const NewUserForm = () => {
   const [name, setName] = useState("");
@@ -13,13 +14,14 @@ const NewUserForm = () => {
   const [password, setPassword] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [gender, setGender] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     try {
       const response = await Axios.post(
-        "https://learning-managment-system-using-mern.onrender.com/userRoute/create-user",
+        "https://learnsphere-backend-1-494r.onrender.com/userRoute/create-user",
         {
           name,
           email,
@@ -31,6 +33,7 @@ const NewUserForm = () => {
 
       if (response.status === 200) {
         alert("Record added successfully");
+        navigate("/user-login", { state: { userEmail: email } });
       } else {
         Promise.reject();
       }

@@ -42,8 +42,8 @@ function App() {
           <Route path="/add-course" element={<CourseAddForm/>}/>
           <Route path="/course-list" element={<CourseList />} />
           <Route path="/edit-course/:id" element={<EditCourse />} />
-          <Route path="view-courses" element={<ViewCourse />} />
-          <Route path="my-courses" element={<MyCourses/>} />
+          <Route path="/view-courses" element={<ViewCourse />} />
+          <Route path="/my-courses" element={<MyCourses/>} />
           <Route path="/payment" element={<PaymentPage/>} />
           <Route path="/paid-course" element={<PaidCourse/>}/>
           <Route path="/course-content" element={<CourseContent/>}/>

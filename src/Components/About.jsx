@@ -19,47 +19,47 @@ const About = ({ show }) => {
   // Define an array of team members with their details
   const teamMembers = [
    
-    {
-      name: 'Aashritha Paladugu',
-      role: 'Frontend Developer',
-      image: '/images/aashritha.jpg', // Add the image URL
-      twitterLink: '#', // Add the actual link
-      facebookLink: '#', // Add the actual link
-      instagramLink: '#', // Add the actual link
-    },
-    {
-      name: 'Neeraj Chokkaku',
-      role: 'Backend Developer',
-      image: '/images/neeraj.jpg', // Add the image URL
-      twitterLink: '#', // Add the actual link
-      facebookLink: '#', // Add the actual link
-      instagramLink: '#', // Add the actual link
-    },
-    {
-      name: 'Ankitha Paladugu',
-      role: 'Frontend Developer',
-      image: '/images/ankitha.jpg', // Add the image URL
-      twitterLink: 'www.twitter.com', // Add the actual link
-      facebookLink: '#', // Add the actual link
-      instagramLink: '#', // Add the actual link
-    },
-    {
-      name: 'Eswar Prashanth Mulagani',
-      role: 'Backend Developer',
-      image: '/images/eswar.jpg', // Add the image URL
-      twitterLink: '#', // Add the actual link
-      facebookLink: '#', // Add the actual link
-      instagramLink: '#', // Add the actual link
-    },
+    // {
+    //   name: 'Aashritha Paladugu',
+    //   role: 'Frontend Developer',
+    //   image: '/images/aashritha.jpg', // Add the image URL
+    //   twitterLink: '#', // Add the actual link
+    //   facebookLink: '#', // Add the actual link
+    //   instagramLink: '#', // Add the actual link
+    // },
+    // {
+    //   name: 'Neeraj Chokkaku',
+    //   role: 'Backend Developer',
+    //   image: '/images/neeraj.jpg', // Add the image URL
+    //   twitterLink: '#', // Add the actual link
+    //   facebookLink: '#', // Add the actual link
+    //   instagramLink: '#', // Add the actual link
+    // },
+    // {
+    //   name: 'Ankitha Paladugu',
+    //   role: 'Frontend Developer',
+    //   image: '/images/ankitha.jpg', // Add the image URL
+    //   twitterLink: 'www.twitter.com', // Add the actual link
+    //   facebookLink: '#', // Add the actual link
+    //   instagramLink: '#', // Add the actual link
+    // },
+    // {
+    //   name: 'Eswar Prashanth Mulagani',
+    //   role: 'Backend Developer',
+    //   image: '/images/eswar.jpg', // Add the image URL
+    //   twitterLink: '#', // Add the actual link
+    //   facebookLink: '#', // Add the actual link
+    //   instagramLink: '#', // Add the actual link
+    // },
     
-    {
-      name: 'Maniteja Vallala',
-      role: ' Backend Developer',
-      image: '/images/teja.jpg', // Add the image URL
-      twitterLink: '#', // Add the actual link
-      facebookLink: '#', // Add the actual link
-      instagramLink: '#', // Add the actual link
-    },
+    // {
+    //   name: 'Maniteja Vallala',
+    //   role: ' Backend Developer',
+    //   image: '/images/teja.jpg', // Add the image URL
+    //   twitterLink: '#', // Add the actual link
+    //   facebookLink: '#', // Add the actual link
+    //   instagramLink: '#', // Add the actual link
+    // },
   ];
 
   return (
@@ -68,7 +68,7 @@ const About = ({ show }) => {
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             <img src="/images/logo1.jpg" alt="Logo" width="50" height="50" className="me-5" />
-            LEARN HUB
+            Study Sphere
           </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -113,7 +113,10 @@ const About = ({ show }) => {
 
       <section className="team">
         <div className="center">
-          <h1>Our Team</h1>
+          <h1>About Me</h1>
+          <h2>Myself Jayadeep Chenchugari.I disigned this project to provide the access to the courses for students.</h2>
+          <h2></h2>
+          <h2>Happy Learning.</h2>
         </div>
 
         <div className="team-content">
@@ -143,9 +146,9 @@ const About = ({ show }) => {
         <div class="container">
           <div class="row">
             <div class="col" id="company">
-              <img src="images/logo.png" alt="" class="logo" />
+              <img src="images/logo.jpg" alt="" class="logo" />
               <p>
-                "Our mission at Learn Hub is to provide accessible, high-quality, and diverse educational content to learners of all backgrounds."
+                "My mission  is to provide accessible, high-quality, and diverse educational content to learners of all backgrounds."
 
               </p>
               <div class="social">
@@ -182,11 +185,13 @@ const About = ({ show }) => {
               <h3>Contact</h3>
               <div class="contact-details">
                 <i class="fa fa-location"></i>
-                <p>FF-42,Hyderabad, <br /> Telangana, INDIA</p>
+                <p>Nandyal <br /> Andhra Pradesh, INDIA</p>
               </div>
               <div class="contact-details">
                 <i class="fa fa-phone"></i>
-                <p>+1-8755856858</p>
+                
+               
+                <p>PhoneNo:8919101822</p>
               </div>
             </div>
           </div><br></br>

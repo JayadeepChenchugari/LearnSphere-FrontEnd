@@ -12,7 +12,7 @@ const UserProblem = () => {
     // Fetch user requests from the server
     const fetchUserRequests = async () => {
       try {
-        const response = await Axios.get("https://learning-managment-system-using-mern.onrender.com/supportRoute/get-requests");
+        const response = await Axios.get("https://learnsphere-backend-1-494r.onrender.com/supportRoute/get-requests");
         if (response.status === 200) {
           // Add "isAnswered" property to each request
           const requestsWithAnswer = response.data.map(request => ({ ...request, isAnswered: false }));
@@ -31,7 +31,7 @@ const UserProblem = () => {
   const handleDeleteRequest = async (requestId) => {
     // Implement the logic to delete the user request
     try {
-      const response = await Axios.delete(`https://learning-managment-system-using-mern.onrender.com/supportRoute/delete-request/${requestId}`);
+      const response = await Axios.delete(`https://learnsphere-backend-1-494r.onrender.com/supportRoute/delete-request/${requestId}`);
       if (response.status === 200) {
         const updatedRequests = userRequests.filter(request => request._id !== requestId);
         setUserRequests(updatedRequests);
@@ -58,7 +58,7 @@ const UserProblem = () => {
   const handleAnswerSubmit = async () => {
     // Implement the logic to submit the answer
     try {
-      const response = await Axios.post(`https://learning-managment-system-using-mern.onrender.com/supportRoute/answer-request/${selectedRequestId}`, {
+      const response = await Axios.post(`https://learnsphere-backend-1-494r.onrender.com/supportRoute/answer-request/${selectedRequestId}`, {
         answer,
       });
       if (response.status === 200) {

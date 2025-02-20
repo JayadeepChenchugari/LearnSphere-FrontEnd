@@ -8,6 +8,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Sidebar from "./Sidebar"; // Replace with the actual path to your Sidebar component.
 import { SidebarData } from "./SidebarData";
+import { useNavigate } from "react-router-dom";
 
 const MyCourses = () => {
   const [courses, setCourses] = useState([]);
@@ -23,11 +24,12 @@ const MyCourses = () => {
   const [creditExpiry, setCreditExpiry] = useState("");
   const [creditCvv, setCreditCvv] = useState("");
   const [selectedCourse, setSelectedCourse] = useState(null);
+  const navigate=useNavigate();
 
   useEffect(() => {
     // Fetch courses from the API endpoint and update the courses state
     axios
-      .get("https://learning-managment-system-using-mern.onrender.com/cartRoute")
+      .get("https://learnsphere-backend-1-494r.onrender.com/cartRoute")
       .then((res) => {
         if (res.status === 200) {
           setCourses(res.data);
@@ -42,7 +44,7 @@ const MyCourses = () => {
 
   const handleDeleteCourse = (courseId) => {
     axios
-      .delete(`https://learning-managment-system-using-mern.onrender.com/cartRoute/delete-course/${courseId}`)
+      .delete(`https://learnsphere-backend-1-494r.onrender.com/cartRoute/delete-course/${courseId}`)
       .then((res) => {
         if (res.status === 200) {
           setCourses(courses.filter((course) => course._id !== courseId));
@@ -63,18 +65,22 @@ const MyCourses = () => {
 
   const handlePaymentSubmit = async (event) => {
     event.preventDefault();
+   
     try {
       const response = await axios.post(
-        "https://learning-managment-system-using-mern.onrender.com/paidRoute/add-paid-course",
+        "https://learnsphere-backend-1-494r.onrender.com/paidRoute/add-paid-course",
         {
           CourseName: selectedCourse.CourseName,
           CourseDescription: selectedCourse.CourseDescription,
           Price: selectedCourse.Price,
+          imageUrl:selectedCourse.imageUrl,
         }
       );
 
       if (response.status === 200) {
         alert("Payment successful");
+        navigate("/paid-course");
+
       } else {
         console.log("Payment failed");
       }
@@ -91,9 +97,9 @@ const MyCourses = () => {
   const validateCardDetails = () => {
     // Basic validation for card details (you can add more specific validation rules)
     return (
-      debitCardNumber.length >= 16 &&
+      debitCardNumber.length >= 6 &&
       debitCardName.length > 0 &&
-      debitExpiry.length >= 7 &&
+      debitExpiry.length >= 5 &&
       debitCvv.length === 3
     );
   };
@@ -101,9 +107,9 @@ const MyCourses = () => {
   const validateCreditCardDetails = () => {
     // Basic validation for credit card details (you can add more specific validation rules)
     return (
-      creditCardNumber.length >= 16 &&
+      creditCardNumber.length >= 6 &&
       creditCardName.length > 0 &&
-      creditExpiry.length >= 7 &&
+      creditExpiry.length >=5 &&
       creditCvv.length === 3
     );
   };

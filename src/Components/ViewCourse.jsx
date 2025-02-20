@@ -28,7 +28,7 @@ function ViewCourse() {
 
   const fetchData = () => {
     axios
-      .get("https://learning-managment-system-using-mern.onrender.com/courseRoute")
+      .get("https://learnsphere-backend-1-494r.onrender.com/courseRoute")
       .then((res) => {
         if (res.status === 200) {
           setArr(res.data);
@@ -42,7 +42,7 @@ function ViewCourse() {
 
   const handleRegister = (course) => {
     axios
-      .post("https://learning-managment-system-using-mern.onrender.com/cartRoute/add-to-cart", course)
+      .post("https://learnsphere-backend-1-494r.onrender.com/cartRoute/add-to-cart", course)
       .then((res) => {
         if (res.status === 200) {
           alert("Course registered successfully!");
@@ -54,6 +54,7 @@ function ViewCourse() {
         console.error("Error registering course:", err);
       });
   };
+
 
   return (
     <div>

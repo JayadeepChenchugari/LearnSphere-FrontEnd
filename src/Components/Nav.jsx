@@ -22,7 +22,7 @@ function Nav() {
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">
                         <img src="/images/logo1.jpg" alt="Logo" width="50" height="50" className="me-5" />
-                        LEARN HUB
+                        Study Sphere
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -96,7 +96,7 @@ function Nav() {
                 <div class="container">
                     <div class="row">
                         <div class="col" id="company">
-                            <img src="images/logo.png" alt="" class="logo" />
+                            <img src="images/logo.jpg" alt="" class="logo" />
                             <p>
                                 "Our mission at Learn Hub is to provide accessible, high-quality, and diverse educational content to learners of all backgrounds."
 
@@ -133,13 +133,16 @@ function Nav() {
 
                         <div class="col" id="contact">
                             <h3>Contact</h3>
+                            
                             <div class="contact-details">
                                 <i class="fa fa-location"></i>
-                                <p>FF-42,Hyderabad, <br /> Telangana, INDIA</p>
+                                
+                                <p>Nandyal <br /> Andhra Pradesh, India</p>
+
                             </div>
                             <div class="contact-details">
                                 <i class="fa fa-phone"></i>
-                                <p>+1-8755856858</p>
+                                <p>PhoneNo:8919101822</p>
                             </div>
                         </div>
                     </div><br></br>

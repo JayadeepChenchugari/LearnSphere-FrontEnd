@@ -15,7 +15,7 @@ const SupportForm = () => {
   const handleAddRequest = async (event) => {
     event.preventDefault();
     try {
-      const response = await Axios.post("https://learning-managment-system-using-mern.onrender.com/supportRoute/create-query", {
+      const response = await Axios.post("https://learnsphere-backend-1-494r.onrender.com/supportRoute/create-query", {
         Name, Email, Subject, Message
       });
       if (response.status === 200) {

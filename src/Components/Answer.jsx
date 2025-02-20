@@ -7,7 +7,7 @@ const Answer = () => {
   useEffect(() => {
     const fetchAnswers = async () => {
       try {
-        const response = await Axios.get('https://learning-managment-system-using-mern.onrender.com/supportRoute/get-answers');
+        const response = await Axios.get('https://learnsphere-backend-1-494r.onrender.com/supportRoute/get-answers');
         if (response.status === 200) {
           setAnswers(response.data);
         } else {
