@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { FaGraduationCap, FaRupeeSign, FaInfoCircle } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 
 import "./CourseList.css";
@@ -21,7 +22,7 @@ const Navbar = () => {
 
 function ViewCourse() {
   const [arr, setArr] = useState([]);
-
+const navigate = useNavigate();
   useEffect(() => {
     fetchData();
   }, []);
@@ -46,6 +47,8 @@ function ViewCourse() {
       .then((res) => {
         if (res.status === 200) {
           alert("Course registered successfully!");
+          navigate("/my-courses");
+
         } else {
           console.error("Failed to register course.");
         }
