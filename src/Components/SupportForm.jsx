@@ -4,6 +4,7 @@ import Sidebar from './Sidebar.js';
 import { SidebarData } from './SidebarData.js';
 import Axios from "axios";
 import AlertBox from './AlertBox'; // Adjust the path based on your project structure
+import { useNavigate } from "react-router-dom";
 
 const SupportForm = () => {
   const [Name, setName] = useState("");
@@ -11,6 +12,7 @@ const SupportForm = () => {
   const [Subject, setSubject] = useState("");
   const [Message, setMessage] = useState("");
   const [alert, setAlert] = useState({ message: '', type: '' });
+  const navigate = useNavigate();
 
   const handleAddRequest = async (event) => {
     event.preventDefault();
@@ -18,17 +20,24 @@ const SupportForm = () => {
       const response = await Axios.post("https://learnsphere-backend-1-494r.onrender.com/supportRoute/create-query", {
         Name, Email, Subject, Message
       });
+  
       if (response.status === 200) {
         setAlert({ message: 'Request sent successfully', type: 'success' });
+  
+        // Delay navigation to allow the alert to be visible
+        setTimeout(() => {
+          navigate('/dashboard');
+        }, 2000); // 2 seconds delay
       } else {
         setAlert({ message: 'Error in sending request', type: 'error' });
         Promise.reject();
       }
     } catch (error) {
       setAlert({ message: 'Error in sending request', type: 'error' });
-      console.log("error in sending request", error);
+      console.log("Error in sending request", error);
     }
   };
+  
 
   const pageStyle = {
     backgroundColor: "", // Replace with your desired background color
