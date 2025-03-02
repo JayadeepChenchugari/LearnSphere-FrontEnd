@@ -41,11 +41,7 @@ const CourseContext = () => {
           <div id="introduction" className="mt-5 p-3 bg-light">
             <h2>Introduction</h2>
             <p>
-              Android is a software package and Linux-based operating system for
-              mobile devices such as tablet computers and smartphones. It is
-              developed by Google and later the Open Handset Alliance. Java
-              language is mainly used to write Android code even though other
-              languages can be used.
+              Java is a programming language and computing platform that can be used to create applications for many devices. It is a popular choice for developers to create mobile apps, enterprise software, and web applications. 
             </p>
           </div>
 
