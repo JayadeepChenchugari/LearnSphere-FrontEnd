@@ -19,47 +19,7 @@ const About = ({ show }) => {
   // Define an array of team members with their details
   const teamMembers = [
    
-    // {
-    //   name: 'Aashritha Paladugu',
-    //   role: 'Frontend Developer',
-    //   image: '/images/aashritha.jpg', // Add the image URL
-    //   twitterLink: '#', // Add the actual link
-    //   facebookLink: '#', // Add the actual link
-    //   instagramLink: '#', // Add the actual link
-    // },
-    // {
-    //   name: 'Neeraj Chokkaku',
-    //   role: 'Backend Developer',
-    //   image: '/images/neeraj.jpg', // Add the image URL
-    //   twitterLink: '#', // Add the actual link
-    //   facebookLink: '#', // Add the actual link
-    //   instagramLink: '#', // Add the actual link
-    // },
-    // {
-    //   name: 'Ankitha Paladugu',
-    //   role: 'Frontend Developer',
-    //   image: '/images/ankitha.jpg', // Add the image URL
-    //   twitterLink: 'www.twitter.com', // Add the actual link
-    //   facebookLink: '#', // Add the actual link
-    //   instagramLink: '#', // Add the actual link
-    // },
-    // {
-    //   name: 'Eswar Prashanth Mulagani',
-    //   role: 'Backend Developer',
-    //   image: '/images/eswar.jpg', // Add the image URL
-    //   twitterLink: '#', // Add the actual link
-    //   facebookLink: '#', // Add the actual link
-    //   instagramLink: '#', // Add the actual link
-    // },
     
-    // {
-    //   name: 'Maniteja Vallala',
-    //   role: ' Backend Developer',
-    //   image: '/images/teja.jpg', // Add the image URL
-    //   twitterLink: '#', // Add the actual link
-    //   facebookLink: '#', // Add the actual link
-    //   instagramLink: '#', // Add the actual link
-    // },
   ];
 
   return (
